@@ -13,13 +13,12 @@ namespace EscritorioAdvocacia.Controllers {
         }
 
         public IActionResult About() {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Sistema para Escritório de Advocacia.";
 
             return View();
         }
 
         public IActionResult Contact() {
-            ViewData["Message"] = "Your contact page.";
 
             return View();
         }
@@ -30,7 +29,7 @@ namespace EscritorioAdvocacia.Controllers {
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error() {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new EscritorioAdvocacia.Models.ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

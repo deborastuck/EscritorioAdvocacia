@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\debora stuck\\Documents\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\debora stuck\\Documents\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\debora stuck\\Documents\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia.csproj",
+        "projectName": "EscritorioAdvocacia",
+        "projectPath": "C:\\Users\\debora stuck\\Documents\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia.csproj",
+        "packagesPath": "C:\\Users\\debora stuck\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\debora stuck\\Documents\\EscritorioAdvocacia\\EscritorioAdvocacia\\EscritorioAdvocacia\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\debora stuck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

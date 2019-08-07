@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using EscritorioAdvocacia.Models;
 using EscritorioAdvocacia.Models.ViewModels;
 using EscritorioAdvocacia.Services;
@@ -12,10 +11,10 @@ namespace EscritorioAdvocacia.Controllers {
             _processoService = processoService;
             _clienteService = clienteService;
         }
+
         public IActionResult Index() {
             var list = _processoService.FindAll();
             return View(list);
-
         }
 
         public IActionResult Create() {

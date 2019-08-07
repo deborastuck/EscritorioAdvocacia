@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using EscritorioAdvocacia.Models;
+using EscritorioAdvocacia.Services;
 
 namespace EscritorioAdvocacia.Controllers
 {
@@ -19,9 +15,11 @@ namespace EscritorioAdvocacia.Controllers
         }
 
         // GET: Clientes
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Cliente.ToListAsync());
+            var clienteServce = new ClienteService(_context);
+            var list = clienteServce.FindAll();
+            return View(list);
         }
 
 
@@ -46,11 +44,5 @@ namespace EscritorioAdvocacia.Controllers
             }
             return View(cliente);
         }
-
-
-       // private bool ClienteExists(int id)
-        //{
-          //  return _context.Cliente.Any(e => e.Id == id);
-       // }
     }
 }

@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using EscritorioAdvocacia.Models;
 
 namespace EscritorioAdvocacia.Controllers {
     public class HomeController : Controller {
@@ -20,10 +15,6 @@ namespace EscritorioAdvocacia.Controllers {
 
         public IActionResult Contact() {
 
-            return View();
-        }
-
-        public IActionResult Privacy() {
             return View();
         }
 
